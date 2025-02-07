@@ -58,6 +58,39 @@ a {
     color: var(--main-bg-color)
 }
 
+
+/****** Header ***********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 80px;
+    padding: 25px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navigation ul :hover {
+    border-top: 3px solid #0065FC;
+}
+
+.navigation {
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
