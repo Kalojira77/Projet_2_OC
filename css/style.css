@@ -67,7 +67,7 @@ header {
     justify-content: space-between;
 }
 
-header img {
+#logo {
     width: 80px;
     padding: 25px 0;
 }
