@@ -74,6 +74,7 @@ header {
 
 header a {
     padding: 27px 0;
+    border-top: solid 2px #0065fc00;
 }
 
 header a:hover{
@@ -89,6 +90,41 @@ header nav {
 
 
 /****** Formulaire de recherche ***********/
+
+#search {
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    width: max-content;
+    background-color: #F2F2F2;
+}
+
+#search .fa-solid {
+    color: black;
+    padding: 10px 12px;
+}
+
+#search input {
+    border: solid 1px #f2f2f2;
+    box-shadow: none;
+}
+
+#search input::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#search button {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    border-style: none;
+    padding: 0 12px 0 10px;
+}
+
+
+
 
 
 
