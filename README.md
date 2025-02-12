@@ -5,4 +5,5 @@
 Difficultés :
 Trouver une structure html la plus simple possible pour éviter de complexifier le CSS. 
 
-décalage au niveau des liens
+A faire :
+- centrer le placeholder de la barre de recherche
