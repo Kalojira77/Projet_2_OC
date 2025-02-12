@@ -195,14 +195,22 @@ header nav {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+.hébergements {
     width: 65%;
+}
+
+.hébergements img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
 }
+
 
 .populaires-title {
     display: flex;
