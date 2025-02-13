@@ -203,7 +203,6 @@ header nav {
 
 .hebergements {
     width: 65%;
-    border: solid 2px black;
 }
 
 .hebergements-cards {
@@ -220,13 +219,13 @@ header nav {
 }
 
 .hebergements-cards article {
-    border: solid 2px red;
-    flex-basis: 25%;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hebergements img {
     height: 136px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
