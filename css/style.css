@@ -21,7 +21,6 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px 0 50px;
     box-sizing: border-box;
     display: flex;
@@ -215,44 +214,27 @@ header nav {
     margin-bottom: 20px;
 }
 
+.hebergements-cards a {
+    display: flex;
+    flex-basis: 32%;
+}
+
 .hebergements-cards article {
     border: solid 2px red;
     flex-basis: 25%;
 
 }
 
-/*
-.wrapper-hébergements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.wrapper-hébergements .card {
-    display: flex;
-    flex-basis: 33%;
-}
-
-.hébergements img {
+.hebergements img {
     height: 136px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
 
-.hébergements > a {
-    font-weight: bold;
+.hebergements .card-rating {
+    margin-bottom: 5px;
 }
-
-
-
-*/
-
-
-
-
-
-
 
 
 
