@@ -1,13 +1,9 @@
 # Processus de développement
 
-*Création du header
-
-Difficultés :
-Trouver une structure html la plus simple possible pour éviter de complexifier le CSS. 
-
 Question :
 la classe "sr-only" ? Comment fonctionne-t-elle ?
 
 A faire :
 - centrer le placeholder de la barre de recherche
-- La rubrique A propos du footer n'est pas alignée avec les autres.
+- centrer le main container dans le body
+- comportement des cards lorsqu'on réduit la fenetre : devrait passer de 3 à 2 puis 1.
