@@ -115,6 +115,7 @@ header nav {
     color: black;
     font-weight: bold;
     font-size: 15px;
+    text-align: center;
 }
 
 #search button {
@@ -289,11 +290,12 @@ header nav {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .activity-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .activity-element {
@@ -368,9 +370,16 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 0px 30px 0px 30px;
+    justify-content: flex-start;
+}
+
+.footer-menu {
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
 }
 
 footer ul {
@@ -379,6 +388,7 @@ footer ul {
     gap: 15px;
     list-style: none;
     padding: 0;
+
 }
 
 
