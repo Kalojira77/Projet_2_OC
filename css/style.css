@@ -100,7 +100,6 @@ header nav {
     background-color: var(--main-bg-color);
 }
 
-
 #search .fa-solid {
     color: black;
     padding: 10px 12px;
@@ -127,6 +126,8 @@ header nav {
     padding: 0 12px 0 10px;
 }
 
+
+
 /****** Selecteur de filtres ***********/
 
 
@@ -143,6 +144,11 @@ header nav {
     padding: 0;
     display: flex;
     align-items: center;
+}
+
+
+.filter-wrapper {
+    display: flex;
 }
 
 .filter {
@@ -181,7 +187,15 @@ header nav {
     margin-right: 5px;
 }
 
+@media (max-width: 1024px) {
+    .filter-list {
+        flex-direction: column;
+    }
 
+    #filter1 {
+        margin-left: 0;
+    }
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -238,8 +252,11 @@ header nav {
 
 
 /****** Populaires ***********/
+
+
+
 .hebergements-and-populaires .populaires {
-    width: 32%;
+    width: 32%; */
 }
 
 .populaires-title {
@@ -282,6 +299,17 @@ header nav {
     margin-bottom: 5px;
 }
 
+
+@media (max-width: 1024px) {
+
+    .hebergements-and-populaires .populaires {
+      /*  order: -1; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 
 /****** Activités ***********/
