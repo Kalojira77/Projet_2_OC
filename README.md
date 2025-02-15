@@ -2,7 +2,7 @@
 
 Question :
 la classe "sr-only" ? Comment fonctionne-t-elle ? ("note de 4 sur 5")
-Les médias queries doivent-ils intervenir après les propriétés initiales ? 
+Les médias queries doivent-ils forcément intervenir après les propriétés initiales ? 
 Je n'arrive pas à avoir une transition correcte dans la section hébergement
 
 

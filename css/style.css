@@ -16,12 +16,15 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: auto;
+    max-width: 1440px;
+
 }
 
 .main-container {
     width: 100%;
-    padding: 0 50px 0 50px;
+    max-width: 1440px;
+    padding: 0 10px 0 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -149,6 +152,7 @@ header nav {
 
 .filter-wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filter {
@@ -162,7 +166,7 @@ header nav {
 }
 
 .filter:hover {
-    background-color: var(--main-bg-color);
+    background-color: var(--filter-bg-color);
 }
 
 .filter-list .fa-solid {
@@ -186,17 +190,6 @@ header nav {
     width: 25px;
     margin-right: 5px;
 }
-
-@media (max-width: 1024px) {
-    .filter-list {
-        flex-direction: column;
-    }
-
-    #filter1 {
-        margin-left: 0;
-    }
-}
-
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -230,7 +223,7 @@ header nav {
 
 .hebergements-cards a {
     display: flex;
-    flex-basis: 32%;
+    flex-basis: 28%;
 }
 
 .hebergements-cards article {
@@ -256,7 +249,7 @@ header nav {
 
 
 .hebergements-and-populaires .populaires {
-    width: 32%; */
+    width: 32%; 
 }
 
 .populaires-title {
@@ -299,19 +292,6 @@ header nav {
     margin-bottom: 5px;
 }
 
-
-@media (max-width: 1024px) {
-
-    .hebergements-and-populaires .populaires {
-      /*  order: -1; */
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-
 /****** Activités ***********/
 
 .activity {
@@ -327,6 +307,8 @@ header nav {
 }
 
 .activity-element {
+    display: flex;
+    flex-direction: column;
     flex-basis: 25%;
     border-radius: 25px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -334,7 +316,7 @@ header nav {
 
 .activity-element img {
     width: 100%;
-    height: 87%;
+    height: 80%;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
@@ -348,17 +330,29 @@ header nav {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filter-list {
+        flex-direction: column;
+    }
+
+    #filter1 {
+        margin-left: 0;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+    .hebergements-and-populaires .populaires {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: 20px;
+          margin-top: 50px;
+      }
+
     .hebergements {
         width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -378,11 +372,35 @@ header nav {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav a {
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+    }
+
+    header nav a:hover {
+        border-bottom: 2px solid var(--main-color);
+        border-top: 2px solid transparent;
+    }
+
+
 }
 
 /********** Footer **********/
@@ -399,7 +417,7 @@ footer {
 .footer-container {
     display: flex;
     width: 100%;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 10px 0px 10px;
     justify-content: flex-start;
 }
 
