@@ -177,7 +177,6 @@ header nav {
     align-items: center;
 }
 
-
 .filter-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +190,20 @@ header nav {
     color: black;
     font-weight: bold;
     font-size: 15px;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.icone {
+    width: 15%;
+}
+
+.filter-text {
+    font-size: 1vw;
 }
 
 .filter:hover {
@@ -313,16 +326,6 @@ header nav {
     justify-content: space-between;
     align-items: center;
 }
-
-/*
-.populaires-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-    height: 90%;
-
-} */
 
 .populaires-cards .card {
     display: flex;
@@ -542,8 +545,25 @@ footer a:hover {
         border-radius: 10px;
     }
 
+    .filter-wrapper {
+        width: 100%;
+    }
+
+    .filter_box {
+        width: 100%;
+    }
+
+    #filter1 {
+        width: 50%;
+    }
+
     #filter2 {
         margin-left: 0;
+    }
+
+    .filter {
+        width: 50%;
+        font-size: 12px;
     }
 
 
