@@ -103,7 +103,7 @@ header nav {
     background-color: var(--main-bg-color);
 }
 
-#search .fa-solid {
+#search .fa-location-dot {
     color: black;
     padding: 10px 12px;
 }
@@ -329,6 +329,48 @@ header nav {
     padding-left: 15px;
 }
 
+
+/********** Footer **********/
+
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    justify-content: flex-start;
+}
+
+.footer-menu {
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+
+}
+
+footer h2 {
+    font-size:larger;
+    margin-bottom: 25px;
+}
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -410,49 +452,24 @@ header nav {
 
     #search-button {
         display: flex;
-        color: var(--main-bg-color);
+        color: white;
+        padding: 10px 12px;
+    }
+
+    #search button {
         border-radius: 10px;
     }
 
-}
+    .hebergements-cards {
+        flex-direction: column;
+    }
 
-/********** Footer **********/
+    .activity-wrapper {
+        flex-direction: column;
+    }
 
-footer {
-    background-color: var(--main-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    margin-top: 50px;
-}
-
-.footer-container {
-    display: flex;
-    width: 100%;
-    padding: 0px 10px 0px 10px;
-    justify-content: flex-start;
-}
-
-.footer-menu {
-    padding: 0px 30px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 33%;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
+    .footer-container {
+        flex-direction: column;
+    }
 
 }
-
-
-footer h2 {
-    font-size:larger;
-    margin-bottom: 25px;
-}
-
