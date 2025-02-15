@@ -126,7 +126,11 @@ header nav {
     font-weight: bold;
     border-radius: 0 10px 10px 0;
     border-style: none;
-    padding: 0 12px 0 10px;
+}
+
+
+#search-button {
+    display: none;
 }
 
 
@@ -400,6 +404,15 @@ header nav {
         border-top: 2px solid transparent;
     }
 
+    #search span {
+        display: none;
+    }
+
+    #search-button {
+        display: flex;
+        color: var(--main-bg-color);
+        border-radius: 10px;
+    }
 
 }
 
