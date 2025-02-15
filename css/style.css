@@ -72,21 +72,23 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    padding-right: 10px;
 }
 
 #logo {
     width: 80px;
-    padding: 25px 0;
-    padding: 40px;
+    padding: 20px 40px;
+    object-fit: contain;
 }
 
 header a {
-    padding: 27px 0;
+    padding: 30px 0;
     border-top: solid 2px #0065fc00;
 }
 
 header a:hover{
     border-top: solid 2px var(--main-color);
+    color: var(--main-color);
 }
 
 header nav {
@@ -111,7 +113,7 @@ header nav {
 }
 
 .search_options > h1 {
-    margin-bottom: 5px;
+    margin: 0;
 }
 
 .search_options > p {
@@ -142,6 +144,12 @@ header nav {
     font-weight: bold;
     border-radius: 0 10px 10px 0;
     border-style: none;
+    opacity: 0.9;
+}
+
+#search button:hover {
+    opacity: 1;
+    transform: scale(1.02);
 }
 
 
@@ -187,6 +195,7 @@ header nav {
 
 .filter:hover {
     background-color: var(--filter-bg-color);
+    transform: scale(1.02);
 }
 
 .filter-list .fa-solid {
@@ -230,7 +239,7 @@ header nav {
 /****** Hebergements ***********/
 
 .hebergements {
-    width: 69%;
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
@@ -248,10 +257,18 @@ header nav {
     margin-bottom: 20px;
 }
 
+.hebergements-cards a:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 6px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+}
+
 .hebergements-cards a {
     display: flex;
     flex-basis: 31%;
 }
+
+
 
 .hebergements-article {
     background-color: white;
@@ -274,6 +291,13 @@ header nav {
     flex: 0 0 auto;
 }
 
+.see-more {
+    margin: 0;
+}
+
+.see-more:hover {
+    opacity: 0.8;
+}
 
 
 /****** Populaires ***********/
@@ -281,7 +305,7 @@ header nav {
 
 
 .populaires {
-    width: 29%; 
+    width: 32%; 
 }
 
 .populaires-title {
@@ -305,9 +329,15 @@ header nav {
     margin-top: 33px;
 }
 
+.populaires-cards article:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 6px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+}
+
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 150px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
@@ -342,15 +372,17 @@ header nav {
 .activity {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    margin-top: 50px;
     padding: 30px;
-
 }
 
 .activity-wrapper {
     display: flex;
     gap: 25px;
+}
+
+.activity-wrapper a:hover {
+        box-shadow: 0 0 15px 6px rgba(0,0,0,0.1);
+        transform: scale(1.02);
 }
 
 .activity-element {
@@ -404,12 +436,15 @@ footer ul {
     gap: 15px;
     list-style: none;
     padding: 0;
-
 }
 
 footer h2 {
     font-size:larger;
     margin-bottom: 5px;
+}
+
+footer a:hover {
+    opacity: 0.8;
 }
 
 
