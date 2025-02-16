@@ -190,12 +190,12 @@ header nav {
     color: black;
     font-weight: bold;
     font-size: 15px;
+    min-width: 12vw;
 }
 
 .filter-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 
 .icone {
@@ -204,6 +204,8 @@ header nav {
 
 .filter-text {
     font-size: 1vw;
+    line-height: 25px;
+    margin-left: 15px;
 }
 
 .filter:hover {
@@ -310,6 +312,17 @@ header nav {
 
 .see-more:hover {
     opacity: 0.8;
+}
+.filter-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+.icone{
+    width:18%;
+}
+.filter-text{
+    font-size:1vw;
 }
 
 
@@ -499,6 +512,9 @@ footer a:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .filter-text {
+        font-size: 1.5vw;
+    }
     
 }
 
@@ -603,5 +619,7 @@ footer a:hover {
     .footer-container {
         flex-direction: column;
     }
-
+    .filter-text {
+        font-size: 3vw;
+    }
 }
